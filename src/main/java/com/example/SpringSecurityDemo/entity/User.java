@@ -25,8 +25,8 @@ uniqueConstraints = {
 public class User {
 
 
-    public User (String username,String email,String password){
-        this.username=username;
+    public User (String email,String password){
+
         this.email=email;
         this.password=password;
     }
@@ -34,10 +34,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
-    @Size(min=3,max = 20)
-    @Column(unique = true)
-    private String username;
+
 
     @NotBlank
     @Size(max = 20)
