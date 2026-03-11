@@ -13,6 +13,6 @@ import lombok.RequiredArgsConstructor;
 public class PublicController {
     @GetMapping("/hello")
     public ResponseEntity<?> hello() {
-        return ResponseEntity.ok("Hello World im deployed");
+        return ResponseEntity.ok("Hello World im deployed ok");
     }
 }
